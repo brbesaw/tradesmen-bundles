@@ -1,44 +1,5 @@
 import Link from 'next/link';
 
-const tools = [
-  {
-    name: 'Red Snips',
-    quality: 'Good',
-    url: '#',
-  },
-  {
-    name: 'Green Snips',
-    quality: 'Better',
-    url: '#',
-  },
-  {
-    name: 'Wiss M3R Snips',
-    quality: 'Best',
-    url: '#',
-  },
-  {
-    name: 'Sheet Metal Hammer',
-    quality: 'Good',
-    url: '#',
-  },
-  {
-    name: 'Sheet Metal Hammer - Heavy Duty',
-    quality: 'Better',
-    url: '#',
-  },
-  {
-    name: 'Sheet Metal Hammer - Premium USA Made',
-    quality: 'Best',
-    url: '#',
-  },
-];
-
-const groupedTools = tools.reduce((acc, tool) => {
-  acc[tool.quality] = acc[tool.quality] || [];
-  acc[tool.quality].push(tool);
-  return acc;
-}, {});
-
 export default function ApprenticeBundle() {
   return (
     <main className="bg-black text-white min-h-screen py-10 px-4">
@@ -49,29 +10,94 @@ export default function ApprenticeBundle() {
 
         <h1 className="text-3xl font-bold mb-6 text-center">Apprentice Toolbelt Bundle</h1>
 
-        <section className="space-y-8">
-          {['Good', 'Better', 'Best'].map((quality) => (
-            <div key={quality}>
-              <h2 className="text-xl font-semibold mb-2">{quality}</h2>
-              <ul className="list-disc list-inside space-y-2">
-                {groupedTools[quality]?.map((tool, index) => (
-                  <li key={index}>
-                    <a href={tool.url} className="text-blue-400 hover:underline">
-                      {tool.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+        <section className="space-y-10">
+          {/* Red/Green Snips */}
+          <div>
+            <h2 className="text-xl font-semibold mb-2">Red/Green Snips</h2>
+            <ul className="space-y-1 list-disc list-inside">
+              <li>
+                <span className="font-semibold">Good:</span>{' '}
+                <a
+                  href="https://amzn.to/3G92pGs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:underline"
+                >
+                  Wiss/Crescent Snips
+                </a>
+              </li>
+              <li>
+                <span className="font-semibold">Better:</span>{' '}
+                <a
+                  href="https://amzn.to/43UG6hw"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:underline"
+                >
+                  Midwest Hardened Snips
+                </a>
+              </li>
+              <li>
+                <span className="font-semibold">Best:</span>{' '}
+                <a
+                  href="https://amzn.to/4ctYBvs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:underline"
+                >
+                  Klenk Red Snips
+                </a>{' '}
+                &amp;{' '}
+                <a
+                  href="https://amzn.to/4jb8gK4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:underline"
+                >
+                  Klenk Green Snips
+                </a>
+              </li>
+            </ul>
+          </div>
 
-          <div className="text-center mt-10">
-            <a
-              href="#"
-              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded"
-            >
-              Add Entire Bundle to Amazon Cart
-            </a>
+          {/* Sheet Metal Hammer */}
+          <div>
+            <h2 className="text-xl font-semibold mb-2">Sheet Metal Hammer</h2>
+            <ul className="space-y-1 list-disc list-inside">
+              <li>
+                <span className="font-semibold">Good:</span>{' '}
+                <a
+                  href="https://amzn.to/3ReccgK"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:underline"
+                >
+                  Estwing Sheet Metal Hammer
+                </a>
+              </li>
+              <li>
+                <span className="font-semibold">Better:</span>{' '}
+                <a
+                  href="https://amzn.to/4jAAopD"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:underline"
+                >
+                  Klenk Sheet Metal Hammer
+                </a>
+              </li>
+              <li>
+                <span className="font-semibold">Best:</span>{' '}
+                <a
+                  href="https://amzn.to/4jAAopD"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:underline"
+                >
+                  Malco Sheet Metal Hammer
+                </a>
+              </li>
+            </ul>
           </div>
         </section>
       </div>
