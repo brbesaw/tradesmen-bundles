@@ -3,32 +3,56 @@ import Link from 'next/link';
 export default function ApprenticeBundle() {
   return (
     <main className="bg-black text-white min-h-screen py-10 px-4">
-      <div className="max-w-xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         <Link href="/" className="text-blue-400 hover:underline text-sm mb-4 inline-block">
-          &larr; Back to Home
+          ← Back to Home
         </Link>
 
         <h1 className="text-3xl font-bold mb-6 text-center">Apprentice Toolbelt Bundle</h1>
 
-        <section className="space-y-8">
-          <div className="text-left">
-            <ul className="list-disc list-inside space-y-2">
-              <li><a href="#" className="text-blue-400 hover:underline">Red/Green Snips</a></li>
-              <li><a href="#" className="text-blue-400 hover:underline">Crescent Wrench (Small)</a></li>
-              <li><a href="#" className="text-blue-400 hover:underline">Medium Vise Grips</a></li>
-              <li><a href="#" className="text-blue-400 hover:underline">Small Flat Head Screwdriver</a></li>
-              <li><a href="#" className="text-blue-400 hover:underline">Duct Ripper / Demo Tool</a></li>
-              <li><a href="#" className="text-blue-400 hover:underline">25&apos; Magnetic Tape Measure</a></li>
-              <li><a href="#" className="text-blue-400 hover:underline">Magnetic Torpedo Level</a></li>
-              <li><a href="#" className="text-blue-400 hover:underline">Drift Pin</a></li>
-              <li><a href="#" className="text-blue-400 hover:underline">3&quot; Offset Flat Tongs</a></li>
-              <li><a href="#" className="text-blue-400 hover:underline">Impact Nut Driver Set (1/4&quot;, 5/16&quot;, 3/8&quot;) - Klein Tools 80182</a></li>
-              <li><a href="#" className="text-blue-400 hover:underline">Short Malco Flip Bit (1/4&quot; - 5/16&quot;)</a></li>
-              <li><a href="#" className="text-blue-400 hover:underline">Sharpies and Pencils</a></li>
-            </ul>
+        <section className="space-y-12">
+
+          {/* Example Tool: Sheet Metal Hammer */}
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Sheet Metal Hammer</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <a href="#" className="bg-gray-800 p-4 rounded hover:bg-gray-700">
+                <p className="font-bold text-blue-400">Good</p>
+                <p>Basic Hammer – Brand X</p>
+              </a>
+              <a href="#" className="bg-gray-800 p-4 rounded hover:bg-gray-700">
+                <p className="font-bold text-blue-400">Better</p>
+                <p>Mid-Range Hammer – Brand Y</p>
+              </a>
+              <a href="#" className="bg-gray-800 p-4 rounded hover:bg-gray-700">
+                <p className="font-bold text-blue-400">Best</p>
+                <p>Pro Grade – Brand Z</p>
+              </a>
+            </div>
           </div>
 
-          <div className="text-center mt-10">
+          {/* Repeat for each tool */}
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Red/Green Snips</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <a href="#" className="bg-gray-800 p-4 rounded hover:bg-gray-700">
+                <p className="font-bold text-blue-400">Good</p>
+                <p>Red/Green Snips – Basic Model</p>
+              </a>
+              <a href="#" className="bg-gray-800 p-4 rounded hover:bg-gray-700">
+                <p className="font-bold text-blue-400">Better</p>
+                <p>Mid-Tier Aviation Snips</p>
+              </a>
+              <a href="#" className="bg-gray-800 p-4 rounded hover:bg-gray-700">
+                <p className="font-bold text-blue-400">Best</p>
+                <p>Malco / Midwest Premium</p>
+              </a>
+            </div>
+          </div>
+
+          {/* You can continue adding more tools below using this format */}
+
+          <div className="text-center mt-16">
             <a
               href="#"
               className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded"
