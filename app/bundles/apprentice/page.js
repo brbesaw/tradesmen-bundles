@@ -5,7 +5,7 @@ export default function ApprenticeBundle() {
     <main className="bg-black text-white min-h-screen py-10 px-4">
       <div className="max-w-xl mx-auto">
         <Link href="/" className="text-blue-400 hover:underline text-sm mb-4 inline-block">
-          ← Back to Home
+          &larr; Back to Home
         </Link>
 
         <h1 className="text-3xl font-bold mb-6 text-center">Apprentice Toolbelt Bundle</h1>
@@ -18,12 +18,12 @@ export default function ApprenticeBundle() {
               <li><a href="#" className="text-blue-400 hover:underline">Medium Vise Grips</a></li>
               <li><a href="#" className="text-blue-400 hover:underline">Small Flat Head Screwdriver</a></li>
               <li><a href="#" className="text-blue-400 hover:underline">Duct Ripper / Demo Tool</a></li>
-              <li><a href="#" className="text-blue-400 hover:underline">25' Magnetic Tape Measure</a></li>
+              <li><a href="#" className="text-blue-400 hover:underline">25&apos; Magnetic Tape Measure</a></li>
               <li><a href="#" className="text-blue-400 hover:underline">Magnetic Torpedo Level</a></li>
               <li><a href="#" className="text-blue-400 hover:underline">Drift Pin</a></li>
-              <li><a href="#" className="text-blue-400 hover:underline">3" Offset Flat Tongs</a></li>
-              <li><a href="#" className="text-blue-400 hover:underline">Impact Nut Driver Set (1/4", 5/16", 3/8") - Klein Tools 80182</a></li>
-              <li><a href="#" className="text-blue-400 hover:underline">Short Malco Flip Bit (1/4" - 5/16")</a></li>
+              <li><a href="#" className="text-blue-400 hover:underline">3&quot; Offset Flat Tongs</a></li>
+              <li><a href="#" className="text-blue-400 hover:underline">Impact Nut Driver Set (1/4&quot;, 5/16&quot;, 3/8&quot;) - Klein Tools 80182</a></li>
+              <li><a href="#" className="text-blue-400 hover:underline">Short Malco Flip Bit (1/4&quot; - 5/16&quot;)</a></li>
               <li><a href="#" className="text-blue-400 hover:underline">Sharpies and Pencils</a></li>
             </ul>
           </div>
