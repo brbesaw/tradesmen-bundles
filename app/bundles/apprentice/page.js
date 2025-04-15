@@ -11,93 +11,58 @@ export default function ApprenticeBundle() {
         <h1 className="text-3xl font-bold mb-6 text-center">Apprentice Toolbelt Bundle</h1>
 
         <section className="space-y-10">
-          {/* Red/Green Snips */}
-          <div>
-            <h2 className="text-xl font-semibold mb-2">Red/Green Snips</h2>
-            <ul className="space-y-1 list-disc list-inside">
-              <li>
-                <span className="font-semibold">Good:</span>{' '}
-                <a
-                  href="https://amzn.to/3G92pGs"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-400 hover:underline"
-                >
-                  Wiss/Crescent Snips
-                </a>
-              </li>
-              <li>
-                <span className="font-semibold">Better:</span>{' '}
-                <a
-                  href="https://amzn.to/43UG6hw"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-400 hover:underline"
-                >
-                  Midwest Hardened Snips
-                </a>
-              </li>
-              <li>
-                <span className="font-semibold">Best:</span>{' '}
-                <a
-                  href="https://amzn.to/4ctYBvs"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-400 hover:underline"
-                >
-                  Klenk Red Snips
-                </a>{' '}
-                &amp;{' '}
-                <a
-                  href="https://amzn.to/4jb8gK4"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-400 hover:underline"
-                >
-                  Klenk Green Snips
-                </a>
-              </li>
+          {/* Tool List Section */}
+          <div className="text-left">
+            <ul className="list-disc list-inside space-y-2">
+              <li><a href="#" className="text-blue-400 hover:underline">Red/Green Snips</a></li>
+              <li><a href="#" className="text-blue-400 hover:underline">Sheet Metal Hammer</a></li>
+              <li><a href="#" className="text-blue-400 hover:underline">Crescent Wrench (Small)</a></li>
+              <li><a href="#" className="text-blue-400 hover:underline">Medium Vise Grips</a></li>
+              <li><a href="#" className="text-blue-400 hover:underline">Small Flat Head Screwdriver</a></li>
+              <li><a href="#" className="text-blue-400 hover:underline">Duct Ripper / Demo Tool</a></li>
+              <li><a href="#" className="text-blue-400 hover:underline">25' Magnetic Tape Measure</a></li>
+              <li><a href="#" className="text-blue-400 hover:underline">Magnetic Torpedo Level</a></li>
+              <li><a href="#" className="text-blue-400 hover:underline">Drift Pin</a></li>
+              <li><a href="#" className="text-blue-400 hover:underline">3" Offset Flat Tongs</a></li>
+              <li><a href="#" className="text-blue-400 hover:underline">Impact Nut Driver Set (1/4", 5/16", 3/8") - Klein Tools 80182</a></li>
+              <li><a href="#" className="text-blue-400 hover:underline">Short Malco Flip Bit (1/4" - 5/16")</a></li>
+              <li><a href="#" className="text-blue-400 hover:underline">Sharpies and Pencils</a></li>
             </ul>
           </div>
 
-          {/* Sheet Metal Hammer */}
+          {/* Toolbelt Section */}
           <div>
-            <h2 className="text-xl font-semibold mb-2">Sheet Metal Hammer</h2>
-            <ul className="space-y-1 list-disc list-inside">
-              <li>
-                <span className="font-semibold">Good:</span>{' '}
-                <a
-                  href="https://amzn.to/3ReccgK"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-400 hover:underline"
-                >
-                  Estwing Sheet Metal Hammer
-                </a>
-              </li>
-              <li>
-                <span className="font-semibold">Better:</span>{' '}
-                <a
-                  href="https://amzn.to/4jAAopD"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-400 hover:underline"
-                >
-                  Klenk Sheet Metal Hammer
-                </a>
-              </li>
-              <li>
-                <span className="font-semibold">Best:</span>{' '}
-                <a
-                  href="https://amzn.to/4jAAopD"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-400 hover:underline"
-                >
-                  Malco Sheet Metal Hammer
-                </a>
-              </li>
-            </ul>
+            <h2 className="text-2xl font-semibold mt-10 mb-4">Toolbelt</h2>
+            <div className="space-y-4">
+              <div>
+                <p className="font-medium">Good:</p>
+                <a href="#" className="text-blue-400 hover:underline">Bucket Boss Builder's Tool Belt</a>
+              </div>
+              <div>
+                <p className="font-medium">Better:</p>
+                <a href="#" className="text-blue-400 hover:underline">Occidental Leather 9855 Adjust-to-Fit</a>
+              </div>
+              <div>
+                <p className="font-medium">Best:</p>
+                <a href="#" className="text-blue-400 hover:underline">Occidental Leather 5590 M Electrician's Set</a>
+              </div>
+            </div>
+          </div>
+
+          {/* Tool Bag Section */}
+          <div>
+            <h2 className="text-2xl font-semibold mt-10 mb-4">Tool Bag</h2>
+            <p className="text-sm text-gray-300 mb-2">Coming soon — we'll pull from the local union required list and fill in tools not already included in the toolbelt.</p>
+          </div>
+
+          {/* CTA Button */}
+          <div className="text-center mt-10">
+            <a
+              href="#"
+              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded"
+            >
+              Add Entire Bundle to Amazon Cart
+            </a>
           </div>
         </section>
       </div>
